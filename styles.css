@@ -1,0 +1,66 @@
+
+body {
+}
+
+@keyframes home-bkg {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 64px;
+  line-height: 1.25em;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  padding-left: .5em;
+
+  color: white;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 span:first-letter {
+  font-size: 72px;
+}
+
+.page {
+  height: 100vh;
+}
+
+.home {
+  position: relative;
+
+  height: 100vh;
+  display: flex;
+  flex-justify: center;
+  align-items: center;
+
+  background-color: rgba(0,0,0,.9);
+  margin-left: 50%;
+}
+
+.home-bkg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: url("haiti1.jpg");
+  background-size: cover;
+  background-position: 0% 0%;
+
+  animation-name: home-bkg;
+  animation-duration: 120s;
+  animation-timing-function: linear;
+}
