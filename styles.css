@@ -64,3 +64,18 @@ h1 span:first-letter {
   animation-duration: 120s;
   animation-timing-function: linear;
 }
+
+.side-pic-1 {
+
+  position: fixed;
+
+  width: 50vw;
+
+  box-sizing: border-box;
+  padding: 1rem;
+
+  border: 1px solid grey;
+
+  top: 50%;
+  transform: translateY(-50%);
+}
