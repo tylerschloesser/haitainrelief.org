@@ -2,6 +2,16 @@
 body {
 }
 
+strong {
+  font-weight: bold;
+}
+
+:root {
+  --color-a: #0F0A0A;
+  --color-b: #058ED9;
+  --color-c: #A39A92;
+}
+
 @keyframes home-bkg {
   from {
     background-position: 0% 0%;
@@ -11,12 +21,26 @@ body {
   }
 }
 
-h1 {
+h1, h2 {
   font-family: 'Lora', serif;
-  font-size: 64px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+h1 {
+  font-size: 62px;
   line-height: 1.25em;
 
-  text-transform: uppercase;
   letter-spacing: 3px;
 
   padding-left: .5em;
@@ -32,9 +56,6 @@ h1 span:first-letter {
   font-size: 72px;
 }
 
-.page {
-  height: 100vh;
-}
 
 .home {
   position: relative;
@@ -67,7 +88,7 @@ h1 span:first-letter {
 
 .side-pic-1 {
 
-  position: fixed;
+  position: absolute;
 
   width: 50vw;
 
@@ -78,4 +99,39 @@ h1 span:first-letter {
 
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+.about-us-top {
+  padding-bottom: 42px;
+  padding-top: 42px;
+
+  border-left: 2px solid var(--color-b);
+}
+
+
+main {
+	margin-left: 33vw;
+}
+
+main h2 {
+  margin-bottom: calc(42px * 2);
+}
+
+main p {
+  line-height: 1.5em;
+}
+
+section {
+  margin-right: 42px;
+  padding: calc(42px * 2) 42px;
+}
+
+section.about-us {
+  border: 2px solid var(--color-b);
+  border-left: none;
+}
+
+section.mission-statement {
+  border-left: 2px solid var(--color-b);
 }
